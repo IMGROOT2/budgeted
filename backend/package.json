@@ -11,5 +11,8 @@
     "@google-cloud/functions-framework": "^4.0.0",
     "@google/genai": "^1.4.0",
     "busboy": "^1.6.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0"
   }
 }

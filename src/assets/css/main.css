@@ -1,10 +1,7 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
-/* @font-face {
-  font-family: 'Poppins';
-  src: url('../fonts/Poppins.ttf') format('truetype');
-  font-weight: 400;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@700&display=swap');
 
 button {
   cursor: pointer;
@@ -13,19 +10,29 @@ button {
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #4b5563;
   border-radius: 10px;
 }
+
+::-webkit-scrollbar-thumb {
+  background: #f97316;
+  border-radius: 10px;
+}
+
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #ea580c;
 }
+
 ::-webkit-scrollbar-corner {
-  background: #f1f1f1;
+  background: #4b5563;
 }
+
 ::-webkit-scrollbar-button {
-  background: #f1f1f1;
+  background: #4b5563;
+}
+
+.font-blinker {
+  font-family: "Blinker", sans-serif;
 }
