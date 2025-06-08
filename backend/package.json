@@ -1,0 +1,15 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "npx functions-framework --target=generateBudget --port=3000"
+  },
+  "devDependencies": {
+    "@google-cloud/functions-framework": "^4.0.0",
+    "@google/genai": "^1.4.0",
+    "axios": "^1.9.0"
+  }
+}
