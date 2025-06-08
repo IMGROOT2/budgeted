@@ -162,7 +162,7 @@ const sendData = async () => {
    
 
     const data = new FormData(form.value);
-    const response = await axios.post('http://localhost:3000/', data, {
+    const response = await axios.post('https://us-central1-starry-minutia-459807-a2.cloudfunctions.net/generateBudget/', data, {
       headers: {
         'Content-Type': 'multipart/form-data'
       }

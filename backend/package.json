@@ -5,14 +5,13 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "start": "functions-framework --target=generateBudget --signature-type=http --port=3000",
     "dev": "npx functions-framework --target=generateBudget --port=3000"
   },
-  "devDependencies": {
+  "dependencies": {
     "@google-cloud/functions-framework": "^4.0.0",
     "@google/genai": "^1.4.0",
-    "busboy": "^1.6.0"
-  },
-  "dependencies": {
+    "busboy": "^1.6.0",
     "dotenv": "^16.5.0"
   }
 }
