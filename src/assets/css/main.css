@@ -1,8 +1,6 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
-@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@700&display=swap');
-
 button {
   cursor: pointer;
 }
