@@ -1,6 +1,6 @@
 <template>
   <main
-    class="bg-zinc-900 min-h-screen flex items-center justify-center p-4"
+    class="bg-zinc-900 h-screen flex items-center justify-center p-4"
     @mousemove="onMouseMove"
   >
     <div
@@ -10,7 +10,7 @@
         '--gradient-y': gradientY
       }"
     />
-    <div class="bg-zinc-800 p-8 rounded-lg shadow-2xl text-center lg:max-w-screen-lg xl:max-w-screen-xl w-full relative z-10">
+    <div class="bg-zinc-800 p-8 rounded-lg shadow-2xl text-center lg:max-w-screen-lg xl:max-w-screen-xl w-full relative z-10 max-h-full flex flex-col">
       <img
         :src="BudgetEdLogo"
         alt="BudgetEd Logo"
@@ -28,7 +28,7 @@
           v-show="showForm"
           ref="form"
           enctype="multipart/form-data"
-          class="transition-opacity duration-200 ease-in-out"
+          class="transition-opacity duration-200 ease-in-out min-h-0 overflow-y-auto"
           @submit.prevent="sendData"
         >
           <div class="mb-8 ">
@@ -89,7 +89,7 @@
       <Transition name="fade">
         <div
           v-if="showResponse || errorMessage"
-          class="transition-opacity duration-200 ease-in-out mt-8 text-left"
+          class="transition-opacity duration-200 ease-in-out mt-8 text-left flex flex-col min-h-0"
         >
           <div
             v-if="apiResponseContent"
